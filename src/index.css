@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Header CSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  box-shadow: 2px 2px rgb(101, 101, 101);
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin: 5px;
+  margin-left: 150px;
+}
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px 25px; /*top & bottom 0px and left & right 25px*/
+  font-size: 20px;
+  margin-right: 170px;
+}
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 8px;
+}
+.nav-items > ul > li:hover {
+  cursor: pointer;
+  color: wheat;
+  scale: 1.08;
+  transition: 0.2s ease;
+}
+
+/* Body CSS: */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.body-container {
+  background-color: rgb(57, 57, 57);
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search input {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+  max-width: 70vw;
+}
+
+.restaurant-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.restaurant-card {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.restaurant-card:hover{
+  border: 1px solid #9d9d9d;
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+  scale: 1.05;
+  transition: 0.5s ease;
+}
+
+.restaurant-card .card-image {
+  border-radius: 10px;
+  text-align: center;
+  width: 325px;
+  height: 200px;
+}
+
+.restaurant-card .card-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.restaurant-card p {
+  color: wheat;
+  text-align: justify;
+}
+.restaurant-card .ratings{
+    display: flex;
+}
+.restaurant-card .ratings p{
+    margin-right: 5px;
+}
+.restaurant-card .ratings img{
+  width: 18px;
+  text-align: center;
+  margin: 2px;
+}
+
+/* Footer CSS: */
+.footer{
+  text-align: center;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  height: 40px;
+  padding: 10px;
+  justify-content: space-around;
+}
+.footer p:hover{
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.5s ease;
+}
+.footer .copyright{
+  margin-left: 40px;
+}
+.footer .developnedDetail{
+  margin-right: 80px;
+}
