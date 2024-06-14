@@ -8,7 +8,7 @@ import Daal from "./assets/DaalImage.jpg";
 import HalfStar from "./assets/halfStar.png";
 import FullStar from "./assets/fullStar.png";
 
-//Future Feature: create a array of objects in json file like we get in real time data and then use props to create dynamic card and only return 1 card from this function and take use of reusable components to render these 6 or many cards.
+//Future Feature: create a array of objects in json file like we get in real time data and then use props and useState() Hook to create dynamic card and only return 1 card from this function and take use of reusable components to render these 6 or many cards.
 
 function Body() {
   return (
