@@ -10,6 +10,8 @@ import FullStar from "./assets/fullStar.png";
 
 //Future Feature: create a array of objects in json file like we get in real time data and then use props and useState() Hook to create dynamic card and only return 1 card from this function and take use of reusable components to render these 6 or many cards.
 
+//! Whenever state variable changes, React triggers a reconcilation cycle i.e; re-renders the component (Although React re-renders the entire component, it modifies only the value of state variable in the DOM.).
+
 function Body() {
   return (
     <div className="body-container">
