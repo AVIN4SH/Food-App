@@ -35,6 +35,14 @@
   scale: 1.08;
   transition: 0.2s ease;
 }
+.loginInOutBtn{
+  border: 1px solid wheat;
+  border-radius: 20px;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
 
 /* Body CSS: */
 body {
