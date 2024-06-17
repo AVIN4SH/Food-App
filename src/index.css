@@ -147,3 +147,22 @@ body {
 .footer .developnedDetail{
   margin-right: 80px;
 }
+
+/* About Dev Card from UserClass Component: */
+.aboutDevCard{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px;
+  margin-bottom: 35px;
+}
+.incrementBtn{
+  border: 1px solid black;
+  margin: 2px 6px;
+  padding: 0px 5px;
+  border-radius: 15px;
+}
+.incrementBtn:hover{
+  background-color: #006eff;
+  color: white;
+}
