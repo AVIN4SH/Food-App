@@ -25,12 +25,12 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false); //this is to show hamburger menu for smaller screens.
 
   return (
-    <header className="border border-black shadow-md bg-[#181818] text-white p-4 flex flex-col sm:flex-row justify-around items-center">
+    <header className="border border-black shadow-md bg-[#181818] text-white p-4 flex flex-col md:flex-row justify-around items-center">
       <div className={`${menuOpen ? 'self-center mb-4' : 'ml-6'}`}>
         <img src={FoodAppLogo} alt="Food App Logo" className="w-12 h-auto rounded-full" />
       </div>
       <button
-        className="sm:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-wheat hover:border-wheat"
+        className="md:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-wheat hover:border-wheat"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <svg
@@ -44,7 +44,7 @@ function Header() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
-      <nav className={`${menuOpen ? 'flex flex-col items-center' : 'hidden'} sm:flex sm:flex-row sm:items-center w-full sm:w-auto`}>
+      <nav className={`${menuOpen ? 'flex flex-col items-center' : 'hidden'} md:flex md:flex-row md:items-center w-full md:w-auto`}>
         <ul className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-lg">
           <li className="hover:text-wheat transition-transform transform hover:scale-105 mt-2 sm:mt-0">
             <Link to="/">Home</Link>
