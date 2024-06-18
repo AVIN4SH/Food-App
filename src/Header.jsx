@@ -59,7 +59,7 @@ function Header() {
             <Link to="/cart">Cart</Link>
           </li>
           <li className="border border-wheat rounded-full px-2 hover:text-wheat transition-transform transform hover:scale-105 mt-2 sm:mt-0">
-            Internet Status: {onlineStatus === "true" ? "🟢" : "🔴"}
+            Status: {onlineStatus === "true" ? "🟢 Online" : "🔴 Offline"}
           </li>
           <li className="mt-2 sm:mt-0">
             <button
