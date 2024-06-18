@@ -52,7 +52,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <Suspense fallback={<h1>Please Wait, Loading...</h1>}><About/></Suspense>,
+        element: <Suspense fallback={<h1 className="text-4xl text-center text-red-500 min-w-full min-h-96 flex flex-col justify-center">Please Wait, Loading...</h1>}><About/></Suspense>,
         //This Suspense in used with lazy loading and this fallback is the placeholder which renders until the code is not available. [fallback attribute takes jsx inside its value.]
         //we can also pass shimmer ui to load unitl the page loads
         errorElement: <NotFound/>,
