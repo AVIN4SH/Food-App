@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header className="border border-black shadow-md bg-[#181818] text-white p-4 flex flex-col md:flex-row justify-around items-center">
-      <div className={`${menuOpen ? 'self-center mb-4' : 'ml-6'}`}>
+      <div className={`${menuOpen ? 'self-center mb-4' : 'ml-0'} content-center`}>
         <img src={FoodAppLogo} alt="Food App Logo" className="w-12 h-auto rounded-full" />
       </div>
       <button
