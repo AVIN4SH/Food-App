@@ -83,26 +83,30 @@ class UserClass extends React.Component {
     const {count} = this.state; //here we destructure as now we dont need to write this.state.count, instead we can directly use count as to use state variables.
     const {name, avatar_url} = this.state.userInfo;
     return (
-        <div className="">
-        {/* {console.log("Render Called")} */}
-        <div className="aboutDevCard bg-blue-100 ">
-            <h2 className="text-center">Github Profile</h2>
-            <img src={avatar_url} alt="PFP" />
-          <h2 className="text-3xl text-center">Name: {name}</h2>
-          <h3 className="text-3xl text-center">Location: India</h3>
-          <h3 className="text-3xl text-center">Email: abc123@gmail.com</h3>
-          {/*  
-          <p className="inline-block">
-            State Variables : Count : {count} : 
-            <button onClick={() => {
+        <div className="flex justify-center p-4">
+      <div className="border border-black rounded-lg p-6 mb-9 mx-5 bg-blue-100">
+        <h2 className="text-center text-2xl mb-4">Github Profile</h2>
+        <img src={avatar_url} className="rounded-full mx-auto mb-4" alt="PFP" />
+        <h2 className="text-3xl text-center mb-2">Name: {name}</h2>
+        <h3 className="text-2xl text-center mb-2">Location: India</h3>
+        <h3 className="text-2xl text-center mb-4">Email: abc123@gmail.com</h3>
+        {/*  
+        <p className="inline-block">
+          State Variables : Count : {count} : 
+          <button 
+            onClick={() => {
                 this.setState({
                     count: this.state.count+1,
                 });
-            }} className="incrementBtn">Increment Count</button>
-          </p>
-          */}
-        </div>
+            }} 
+            className="border border-black mx-1 px-2 py-1 rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+          >
+            Increment Count
+          </button>
+        </p>
+        */}
       </div>
+    </div>
     );
   }
 }
