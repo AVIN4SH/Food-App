@@ -9,6 +9,42 @@ import HalfStar from "./assets/halfStar.png";
 import FullStar from "./assets/fullStar.png";
 import useOnlineStatus from "./useOnlineStatus";
 
+
+/*
+*very important:
+  ! Higher Order Components:
+    -these are pure js functions that take in one component as input and return a enhanced version of that component
+    -Use case example: like we can make a higher order component that takes in restaurant card as input and returns a enhanced version that is same card with a promoted or sponsered tag if the restaurant is to be promoted.
+    -and then we can use ternary operator in body and return this enhanced version if promotion is to be done and normal restaurant card if promotion value is false.
+*/ 
+
+/*
+?-   Very Efficient State Management Library: Redux 
+*/
+
+/* 
+! Very Important: Read About: Lifting the State up: (from react docs) 
+*/
+/* 
+! Very Important: Read About: Props Drilling: (from react docs) (props drilling should be avoided rather useContext should be used.)
+    -this is concept where we pass one data from parent to child to its child and so on 
+    -during this the middle childs might not need data and are only passing and this is not good
+    -so react provides a hook for this using which we can pass data from one component to other component directly without following strict hierarchy.
+    !this hook is called: useContext() Hook
+
+    -in useContext hook it is used as:
+      -first we use a createContext() then useContext() and both are named imports from 'react'.
+
+    -use useContext() only where the data ti be passed is to be used at multiple locations, if one or two uses then use props.
+*/
+
+/*
+*very important: 
+  ! Controlled & Uncontrolled Components:
+    -when a component has its own state then it is uncontrolled component
+    -when a parent has state and this state is passed in as parameter to child component i.e; when parent manages state that controls child then child is controled component.
+*/
+
 //Future Feature: create a array of objects in json file like we get in real time data and then use props and useState() Hook to create dynamic card and only return 1 card from this function and take use of reusable components to render these 6 or many cards.
 
 //! Whenever state variable changes, React triggers a reconcilation cycle i.e; re-renders the component (Although React re-renders the entire component, it modifies only the value of state variable in the DOM.).
