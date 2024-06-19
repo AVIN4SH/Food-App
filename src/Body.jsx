@@ -19,7 +19,8 @@ import useOnlineStatus from "./useOnlineStatus";
 */ 
 
 /*
-?-   Very Efficient State Management Library: Redux 
+?-   Very Efficient State Management Library: Redux
+* also use redux dev tools extention for better visual representation and better debugging in redux app.
 */
 
 /* 
