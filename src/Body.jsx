@@ -50,6 +50,22 @@ import useOnlineStatus from "./useOnlineStatus";
 
 //! Whenever state variable changes, React triggers a reconcilation cycle i.e; re-renders the component (Although React re-renders the entire component, it modifies only the value of state variable in the DOM.).
 
+/*
+!   Testing:
+    -Developers can do 3 types of testing:
+      1. Unit Testing (testing a single component isolated from rest of app)
+      2. Integration Testing
+      3. End to End Testing (not a major responsibiity of developer)
+    
+    -Library required to write test cases in react: "React Testing Library" (it comes already installed when we create app using create react app or vite app)
+      -This library uses JEST behind the scene (it is a Delightful JavaScript Testing Framework)
+      -Now as we need to use Babel with jest, we need to instal some extra dependencies and set up babel conifg alteration provided in documentataion
+    -Folder where test files can be written: __tests__  (i.e; double underscore tests double underscore)
+      (double underscore is also known as dunder)
+      the above folder contains files from which all are testing files
+    
+*/
+
 function Body() {
   //below 2 lines utilize a custom hook we created and checks if user is offline or online.
   //if user is offline this message is returned:
@@ -68,7 +84,7 @@ function Body() {
         <input
           type="text"
           placeholder="Search"
-          className="border-2 border-black rounded-full p-2 w-full max-w-xl"
+          className="border-2 border-black text-black rounded-full p-2 w-full max-w-xl"
         />
       </div>
 
