@@ -7,4 +7,4 @@
 <h3>🌐 React-Router-Dom for Single Page Application</h3>
 <h3>⏳ Implemented Lazy Loading with lazy{} and &lt;Suspense&gt; </h3>
   <h3>🍔 Hamburger Menu for Smaller Screens</h3>
-<h2>Live at: https://foodappreact01.netlify.app/</h2>
+<h2>🟢 Live at: https://foodappreact01.netlify.app/</h2>
