@@ -1,10 +1,10 @@
-A basic react app created while laerning React JS.
-Features implemented:
-  -toggle in login button that becomes logout when clicked (utilized useState hook for this state management)
-  -created a custom hook that provides a boolean value if user if online and prompts to check for internet connection when offline
-  -custom 404 page when a path is visited that is not defined
-  -tailwind css
-  -responsive design
-  -react-router-dom for routing and thus help in optimization and making it a single page application
-  -Implemented lazy loading aka chunking/on demand loading/code splitting/dynamic bundling using lazy{} and <Suspense></Suspense> imported from 'react'
-  -hamburger menu for smaller screen sizes
+<h1>🚀 Created a Basic React App in React JS (with these key features):</h1>
+<h3>🔁 Toggle Login/Logout Button (useState Hook)</h3>
+<h3>🛠️ Custom Hook for Online/Offline Status</h3>
+<h3>🚫 Custom 404 Page</h3>
+<h3>🎨 Styled with Tailwind CSS</h3>
+<h3>📱 Responsive Design</h3>
+<h3>🌐 React-Router-Dom for Single Page Application</h3>
+<h3>⏳ Implemented Lazy Loading with lazy{} and &lt;Suspense&gt; </h3>
+  <h3>🍔 Hamburger Menu for Smaller Screens</h3>
+<h2>Live at: https://foodappreact01.netlify.app/</h2>
